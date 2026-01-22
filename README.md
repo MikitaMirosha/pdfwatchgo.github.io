@@ -2,6 +2,7 @@
 
 <img width="64" height="64" alt="app_icon" src="https://github.com/user-attachments/assets/1e785e30-0399-4785-924e-5a22088a21e9" />
 
+
 PDF Watch Go is the easiest way to view documents, notes, and tickets on your Apple Watch.
 No need to take your phone out of your pocket — access your information instantly.
 
