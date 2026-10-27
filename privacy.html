@@ -8,85 +8,116 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
+            color: #2c3e50;
+            max-width: 820px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 24px 20px;
             background-color: #fff;
         }
-        h1 { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        h2 { margin-top: 30px; margin-bottom: 15px; font-size: 1.4em; color: #000; }
-        h3 { margin-top: 20px; font-size: 1.1em; color: #444; }
-        p { margin-bottom: 15px; }
-        ul { margin-bottom: 15px; padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        strong { font-weight: 600; color: #000; }
+        h1 { margin-bottom: 8px; border-bottom: 2px solid #f0f2f5; padding-bottom: 12px; color: #111; }
+        h2 { margin-top: 32px; margin-bottom: 12px; font-size: 1.35em; color: #1a1a1a; border-bottom: 1px solid #f0f2f5; padding-bottom: 6px; }
+        h3 { margin-top: 18px; margin-bottom: 8px; font-size: 1.1em; color: #333; }
+        p { margin-bottom: 14px; }
+        ul { margin-bottom: 14px; padding-left: 24px; }
+        li { margin-bottom: 6px; }
+        strong { font-weight: 600; color: #111; }
         a { color: #007AFF; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .effective-date { color: #666; font-size: 0.95em; margin-bottom: 24px; }
+        .highlight-box { background-color: #f8f9fa; border-left: 4px solid #007AFF; padding: 12px 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
     </style>
 </head>
 <body>
 
     <h1>Privacy Policy for PDF Watch Go</h1>
-    <p><strong>Effective Date:</strong> February 5, 2026</p>
+    <p class="effective-date"><strong>Effective Date:</strong> October 27, 2026</p>
 
     <h2>1. Introduction</h2>
-    <p>This Privacy Policy describes how Nikita Mirashnichenka (nikita.mirashnichenka@gmail.com) ("we," "our," or "us") collects, uses, and discloses information when you use our mobile application, PDF Watch Go (the "Service").</p>
-    <p>We are committed to protecting your privacy and being transparent about how your data is handled, especially regarding our free, ad-supported experience.</p>
+    <p>This Privacy Policy explains how Nikita Mirashnichenka ("we," "our," or "us") collects, uses, and protects information when you use our iOS and watchOS application, <strong>PDF Watch Go</strong> (the "Service").</p>
+    <p>We respect your privacy and are committed to transparency. Our core document processing functions operate strictly on your personal devices without storing your documents on any external servers.</p>
 
-    <h2>2. Information We Collect and How We Use It</h2>
-    <p>To provide our Service and support our free version through advertising, we and our third-party partners collect certain information.</p>
+    <h2>2. Document Processing & File Storage (Your PDFs)</h2>
+    <div class="highlight-box">
+        <strong>Zero Server Storage:</strong> Your PDF files and converted document pages are never uploaded to, transmitted through, or stored on our servers or any cloud services.
+    </div>
+    <ul>
+        <li><strong>On-Device Conversion:</strong> When you select a document, PDF pages are converted into image files locally on your iPhone using Apple's built-in frameworks.</li>
+        <li><strong>Direct Peer-to-Peer Transfer:</strong> Files are transferred directly between your iPhone and paired Apple Watch using Apple's standard encrypted <code>WatchConnectivity</code> protocol.</li>
+        <li><strong>Automatic Local Cleanup:</strong> Temporary page files generated during transfer are automatically purged from your iPhone's temporary cache shortly after transmission. You can also wipe all transferred pages from your Apple Watch at any time via the "Clear" button in the app.</li>
+    </ul>
+
+    <h2>3. Information Collected via Third-Party Services</h2>
+    <p>We do not require account registration, and we do not directly collect personal identifying details such as your name, email address, or physical address. However, to support our free version and monitor application stability, the app integrates third-party SDKs provided by <strong>Google LLC</strong>.</p>
     
-    <h3>2.1 Personal Data and Identifiers</h3>
-    <p>While we do not collect traditional personal data (such as your name or email), the Service uses third-party SDKs that may collect:</p>
+    <h3>3.1 Third-Party Advertising (Google AdMob)</h3>
+    <p>We use <strong>Google AdMob</strong> to display banner and interstitial ads in the free version of the app. Google may automatically collect and process certain device information, including:</p>
     <ul>
-        <li><strong>Identifiers:</strong> Device identifiers such as the IDFA (Identifier for Advertising).</li>
-        <li><strong>Usage Data:</strong> Information on how you interact with the app and advertisements (e.g., app launches, taps, and advertising data).</li>
-        <li><strong>Diagnostics:</strong> Crash logs and performance data to ensure the stability of the Service.</li>
+        <li><strong>Device Identifiers:</strong> Advertising identifier (IDFA) on iOS, if you grant permission via Apple's App Tracking Transparency (ATT) prompt.</li>
+        <li><strong>Usage Data:</strong> Information regarding ad interactions, views, taps, and app launch timestamps.</li>
+        <li><strong>Diagnostics & Performance:</strong> SDK error logs, crash metrics, and load times to assess advertising delivery and stability.</li>
+    </ul>
+    <p>For more details on how Google processes data, please visit <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's Privacy & Terms Partner Site</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+
+    <h3>3.2 In-App Purchases and Subscriptions (Apple StoreKit)</h3>
+    <p>We offer optional auto-renewable subscriptions to unlock premium functionality (e.g., unlimited transfers and ad-free experience). All transactions are processed solely by <strong>Apple Inc.</strong> through the App Store. We never receive or store your payment card numbers, banking details, or billing addresses. We only receive anonymized transaction entitlements from Apple's StoreKit framework to verify whether your subscription is active.</p>
+
+    <h2>4. Legal Bases for Processing (EEA / UK GDPR)</h2>
+    <p>If you are located in the European Economic Area (EEA) or the United Kingdom, our processing of your personal data relies on the following legal bases under Article 6 of the GDPR:</p>
+    <ul>
+        <li><strong>Consent (Art. 6(1)(a) GDPR):</strong> For serving personalized advertisements and accessing your device identifier (IDFA). We obtain this via the Google User Messaging Platform (UMP) consent dialog and Apple's ATT prompt.</li>
+        <li><strong>Legitimate Interests (Art. 6(1)(f) GDPR):</strong> For serving non-personalized ads, fraud prevention, app security, and troubleshooting diagnostic errors.</li>
+        <li><strong>Performance of a Contract (Art. 6(1)(b) GDPR):</strong> To validate your purchases and deliver premium subscription features requested by you.</li>
     </ul>
 
-    <h3>2.2 Purpose of Collection</h3>
-    <p>The information collected is used for the following purposes:</p>
+    <h2>5. Managing Your Choices & Withdrawing Consent</h2>
+    <p>You maintain full control over your privacy preferences at any time:</p>
     <ul>
-        <li><strong>Third-Party Advertising:</strong> To deliver personalized and relevant ads through Google AdMob.</li>
-        <li><strong>Tracking:</strong> To measure advertising effectiveness and user engagement across apps and websites.</li>
-        <li><strong>Analytics and Functionality:</strong> To monitor app performance, fix bugs, and improve user experience.</li>
+        <li><strong>In-App Privacy Settings (UMP):</strong> If you reside in the EEA or UK, you can review or change your advertising consent at any time by tapping the <strong>(?)</strong> guide button in the app and selecting <strong>Privacy Settings</strong>.</li>
+        <li><strong>Apple Tracking Transparency (ATT):</strong> You can revoke or grant tracking permissions at any time under your iOS settings: <code>Settings &gt; Privacy &amp; Security &gt; Tracking &gt; PDF Watch Go</code>.</li>
+        <li><strong>Apple Personalized Ads:</strong> You can manage Apple-delivered ads in <code>Settings &gt; Privacy &amp; Security &gt; Apple Advertising</code>.</li>
     </ul>
 
-    <h3>2.3 Financial Data</h3>
-    <p>We offer paid subscriptions and in-app purchases. <strong>We do not process or store your payment information.</strong> All financial transactions are handled securely by Apple via the App Store. We do not have access to your credit card numbers or bank details.</p>
-
-    <h2>3. Advertising and Consent</h2>
-    <p>We use <strong>Google AdMob</strong> to serve advertisements. Google may use device identifiers to personalize ads based on your interests.</p>
+    <h2>6. Your Privacy Rights (GDPR & CCPA/CPRA)</h2>
+    <h3>6.1 European Union & UK Residents (GDPR)</h3>
+    <p>Subject to applicable law, you have the right to:</p>
     <ul>
-        <li><strong>App Tracking Transparency (ATT):</strong> We will ask for your permission to track your activity. You can manage your preferences or opt-out at any time in your iOS device settings.</li>
-        <li><strong>GDPR Compliance:</strong> For users in the European Economic Area (EEA) and the UK, we provide a consent mechanism to manage your privacy choices regarding personalized advertising.</li>
+        <li>Request access to your personal data.</li>
+        <li>Request correction or deletion of your personal data.</li>
+        <li>Object to or restrict the processing of your personal data.</li>
+        <li>Data portability.</li>
+        <li>Withdraw your consent at any time without affecting the lawfulness of processing prior to withdrawal.</li>
+        <li>Lodge a complaint with a Data Protection Authority (DPA) in your country of residence.</li>
     </ul>
 
-    <h2>4. How We Handle Your Files (PDFs)</h2>
-    <p>The core function of PDF Watch Go is to transfer documents between your devices.</p>
+    <h3>6.2 California Residents (CCPA / CPRA)</h3>
+    <p>Under the California Consumer Privacy Act (as amended by the CPRA):</p>
     <ul>
-        <li><strong>Local Storage:</strong> Your PDF files are stored locally on your iPhone or iPad and Apple Watch.</li>
-        <li><strong>Direct Transfer:</strong> Files are transferred directly between your devices using Apple’s standard connectivity protocols.</li>
-        <li><strong>No Cloud Uploads:</strong> Your documents are <strong>never</strong> uploaded to our servers or any third-party cloud servers. They remain strictly on your devices.</li>
+        <li>We do not sell personal information in the traditional monetary sense. However, sharing identifiers (like IDFA) for cross-context behavioral advertising may be considered "sharing" or "selling" under California law.</li>
+        <li>You have the right to opt out of the sharing/sale of personal information (exercised via ATT / tracking opt-out).</li>
+        <li>You have the right to request disclosure of categories of personal data collected and request deletion.</li>
+        <li>We will not discriminate against you for exercising your privacy rights.</li>
+        <li>We do not collect or process "Sensitive Personal Information" as defined under the CPRA.</li>
     </ul>
 
-    <h2>5. App Permissions</h2>
-    <p>The application may request access to:</p>
+    <h2>7. Device Permissions</h2>
+    <p>The application requests access strictly to necessary system components:</p>
     <ul>
-        <li><strong>File System:</strong> To allow you to select PDF documents for viewing.</li>
-        <li><strong>Local Network/Bluetooth:</strong> To facilitate the transfer of data between your iPhone and Apple Watch.</li>
-        <li><strong>Tracking:</strong> To provide a personalized advertising experience (optional).</li>
+        <li><strong>Document Picker:</strong> To allow you to browse and select the PDF files you choose to import. The app operates inside Apple's security sandbox and cannot read other files on your device.</li>
+        <li><strong>Tracking Permission:</strong> Requested via Apple's standard ATT prompt to deliver personalized advertising. Granting this permission is completely optional.</li>
     </ul>
 
-    <h2>6. Children’s Privacy</h2>
-    <p>Our Service is not intended for children under the age of 13. We do not knowingly collect personal identifiable information from children. If we discover that a child has provided us with personal information, we will take immediate steps to delete it from our systems.</p>
+    <h2>8. International Data Transfers</h2>
+    <p>Third-party service providers (such as Google) may transfer, store, and process information in the United States and other countries outside your country of residence. These transfers are safeguarded by Standard Contractual Clauses (SCCs) approved by the European Commission or equivalent adequacy mechanisms.</p>
 
-    <h2>7. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. You are advised to review this policy periodically for any changes.</p>
+    <h2>9. Children’s Privacy</h2>
+    <p>Our Service is not directed to children under the age of 13 (or under 16 in the EEA/UK). We do not knowingly collect personal identifiable information from children. If you become aware that a child has provided us with personal information, please contact us and we will promptly take appropriate action.</p>
 
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy or our services, please contact us at: <strong>nikita.mirashnichenka@gmail.com</strong></p>
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any modifications will be reflected on this page with an updated "Effective Date." We encourage you to review this page periodically.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, you can reach out to us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:nikita.mirashnichenka@gmail.com">nikita.mirashnichenka@gmail.com</a></p>
 
 </body>
 </html>
